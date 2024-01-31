@@ -7,7 +7,12 @@
 
 * Raspberry Pi 5B
 * A Personal Computer
-* A Micro SD card 
+* A 16G Micro SD card 
+
+.. note::
+
+    To install Home Assistant OS and add some add-ons, 8GB of Micro SD card memory is not sufficient. It is recommended to use a 16GB Micro SD card.
+
 
 **Installation Steps**
 
@@ -46,7 +51,6 @@
         :align: center
 
 #. Click **Next**. If your SD card currently has any files on it, you may wish to back up these files first to prevent you from permanently losing them. If thereis no file to be backed up, click **Yes**.
-
 
     .. image:: img/os_ha_yes.png
 

@@ -117,7 +117,7 @@ There are two ways to install an operating system on the SSD:
 
 **Copying the System from the Micro SD Card to the SSD**
 
-#. Connect a display or access the Raspberry Pi desktop through VNC Viewer. Then click **Raspberry Pi logo** -> **Accessories** -> **SD Card Copier**.
+#. Connect a display or :ref:`remote_desktop`. Then click **Raspberry Pi logo** -> **Accessories** -> **SD Card Copier**.
 
     .. image:: img/ssd_copy.png
 

@@ -12,12 +12,12 @@ Thanks for choosing our Pironman U1.
     
 ..     Please click on the respective links to access the document in your preferred language.
 
-.. image:: img/pironman_u1.JPG
+.. image:: img/pironman_u1.jpg
     :width: 400
     :align: center
 
 
-The Pironman U1 is a versatile UPS enclosure for Raspberry Pi, designed to ensure uninterrupted power and data protection. It features a robust UPS system to safeguard against sudden power losses, and an efficient cooling system with a heat sink and fan to maintain optimal performance. The Pironman U1 intelligently manages power, seamlessly switching to battery in case of low external voltage and smartly adjusting charging currents. It supports NVMe SSD expansion, especially beneficial for Pi 5 users, and includes an infrared receiver for multimedia control. With a 7.4V 2000mAh battery, it provides 2-5 hours of backup power, making it an indispensable accessory for Raspberry Pi enthusiasts.
+Meet the Pironman U1, the essential UPS case for Raspberry Pi, designed for seamless performance and sophisticated style. It features Advanced Hardware Power Path Switching for stable power, Triple Current Sensors for efficient power management, and Intelligent Charging to enhance battery life. Enjoy real-time battery monitoring via I2C Communication, extensive storage options with NVMe SSD Compatibility, and easy multimedia control with an IR Receiver. The case also boasts a retro-style Metal Power Button, an Extended 40-pin GPIO with labeled pins for easy access, and a robust, aesthetically pleasing build. With an efficient cooling fan and direct access to the microSD card slot, the Pironman U1 is the perfect blend of functionality and elegance for your Raspberry Pi.
 
 If you have any questions, please send an email to service@sunfounder.com and we will respond as soon as possible.
 

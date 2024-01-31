@@ -24,29 +24,32 @@ Now we will install the Pironman U1 addon for Home Assistant. Choose one of the 
 
     .. image:: img/ha_open_page.png
 
-#. Then, you will be prompted to add the Addon. Choose **Yes**.
+#. Then, you will be prompted to add the Addon. Choose **ADD**.
 
+    .. image:: img/ha_add.png
 
-#. After a few seconds, the **Pironman U1** addon will appear at the end of the addon store. If not, try refreshing the page.
+#. After a few seconds, the **Pironman U1** addon will appear.
 
-    .. image:: img/ha_find_u1.png
+    .. image:: img/ha_install_u1.png
         :align: center
 
-#. Enter the **Pironman U1** addon and click **Install**. This process may take a few minutes.
+#. Then, start (or restart) the addon.
 
-    .. image:: img/ha_hinstall_u1.png
-        :align: center
-
-#. Currently, you need to disable protection mode to allow the addon to access hardware information. Find **Protection Mode** and turn it off. Then, start (or restart) the addon.
-
-    .. image:: img/ha_open_protection.png
+    .. image:: img/ha_manage_rep.png
         :align: center
         
-#. At this point, the configuration is complete.
+#. Now you can select these options, such as **Start on boot** to enable Pironman U1 to start when the system boots up. Or **Show in sidebar** to show the dashboard specially designed for Pironman U1 in the sidebar.
 
+    .. image:: img/ha_option.png
+
+#. Instructions for Powering On and Off:
+
+  * **Power On**: Press the button until the light turns green, indicating the system is powering on. You can then release the button.
+  * **Shutdown**: Press and hold the button for 2 seconds until the light turns purple, then release. When the power button's light begins to flash purple, the Raspberry Pi will receive a shutdown signal and proceed to shut down. The power button's light will turn off once the shutdown process is complete.
+  * **Power Cut**: If you haven't configured software on the Raspberry Pi, or for other reasons, you can opt for a power cut shutdown. Press and hold the button for 5 seconds and turns red, indicating a direct power cut. Be cautious with this method as it may damage data.
 
 2. Manual Addition
--------------------
+----------------------
 
 Alternatively, follow the steps below to install manually:
 
@@ -55,7 +58,7 @@ Alternatively, follow the steps below to install manually:
     .. image:: img/ha_settings.png
         :align: center
 
-#. Navigate to the **Addon Store** tab.
+#. Navigate to the **ADD-ON STORE** tab.
 
     .. image:: img/ha_addon_store.png
         :align: center
@@ -65,9 +68,9 @@ Alternatively, follow the steps below to install manually:
     .. image:: img/ha_repositories.png
         :align: center
 
-#. Type the repository URL: ``https://github.com/sunfounder/home-assistant-addon-dev``, and click **Add**. After adding the SunFounder repository, close the popup window.
+#. Type the repository URL: ``https://github.com/sunfounder/home-assistant-addon-dev``, and click **ADD**. After adding the SunFounder repository, close the popup window.
 
-    .. image:: img/ha_manage_rep.png
+    .. image:: img/ha_add_url.png
         :align: center
 
 #. Click the menu button again, and click **Check for updates**.
@@ -80,14 +83,22 @@ Alternatively, follow the steps below to install manually:
     .. image:: img/ha_find_u1.png
         :align: center
 
-#. Enter the **Pironman U1** addon and click **Install**. This process may take a few minutes.
+#. Enter the **Pironman U1** addon and click **INSTALL**. This process may take a few minutes.
 
-    .. image:: img/ha_hinstall_u1.png
+    .. image:: img/ha_install_u1.png
         :align: center
 
-#. Currently, you need to disable protection mode to allow the addon to access hardware information. Find **Protection Mode** and turn it off. Then, start (or restart) the addon.
+#. Then, start (or restart) the addon.
 
-    .. image:: img/ha_open_protection.png
+    .. image:: img/ha_manage_rep.png
         :align: center
 
-#. At this point, the configuration is complete.
+#. Now you can select these options, such as **Start on boot** to enable Pironman U1 to start when the system boots up. Or **Show in sidebar** to show the dashboard specially designed for Pironman U1 in the sidebar.
+
+    .. image:: img/ha_option.png
+
+#. Instructions for Powering On and Off:
+
+  * **Power On**: Press the button until the light turns green, indicating the system is powering on. You can then release the button.
+  * **Shutdown**: Press and hold the button for 2 seconds until the light turns purple, then release. When the power button's light begins to flash purple, the Raspberry Pi will receive a shutdown signal and proceed to shut down. The power button's light will turn off once the shutdown process is complete.
+  * **Power Cut**: If you haven't configured software on the Raspberry Pi, or for other reasons, you can opt for a power cut shutdown. Press and hold the button for 5 seconds and turns red, indicating a direct power cut. Be cautious with this method as it may damage data.

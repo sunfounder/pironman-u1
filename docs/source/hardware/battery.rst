@@ -1,5 +1,6 @@
+
 18650 Battery
-=================
+======================
 
 .. image:: img/3pin_battery.jpg
     :width: 500

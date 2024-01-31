@@ -3,9 +3,9 @@ Power Button
 
 **Button Operations**
 
-* **Power On**: Press and hold the button until the light turns green, indicating the system is powering on. You can then release the button.
-* **Shutdown**: After powering on, press and hold the button for 2 seconds until the light turns purple, then release. The Raspberry Pi will receive a shutdown signal and proceed to shut down. After the shutdown is complete, the Pironman U1 will turn off. If the **RTCEN** is connected, the Pironman U1 will enter RTC standby mode. If not connected, the Pironman U1 will power off completely.
-* **Power Cut**: If you haven't configured software on the Raspberry Pi, or for other reasons, you can opt for a power cut shutdown. Press and hold the button for 2 seconds until it turns purple, then continue holding until it reaches 5 seconds and turns red, indicating a direct power cut. Be cautious with this method as it may damage data.
+* **Power On**: Press the button until the light turns green, indicating the system is powering on. You can then release the button.
+* **Shutdown**: After powering on, press and hold the button for 2 seconds until the light turns purple, then release. When the power button's light begins to flash purple, the Raspberry Pi will receive a shutdown signal and proceed to shut down. After the shutdown is complete, the Pironman U1 will turn off. If the **RTCEN** is connected, the Pironman U1 will enter RTC standby mode. If not connected, the Pironman U1 will power off completely. The power button's light will turn off once the shutdown process is complete.
+* **Power Cut**: If you haven't configured software on the Raspberry Pi, or for other reasons, you can opt for a power cut shutdown. Press and hold the button for 5 seconds and turns red, indicating a direct power cut. Be cautious with this method as it may damage data.
 
 **RGB**
 

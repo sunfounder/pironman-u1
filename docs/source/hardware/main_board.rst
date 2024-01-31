@@ -59,9 +59,9 @@ Raspberry Pi Status Monitoring
 
 To turn off the Pironman U1, you need to press and hold the power button for 2 seconds until the button light turns purple, then release. 
 
-At this point, Pironman U1 will send a shutdown signal to the Raspberry Pi via I2C. If you have followed the :ref:`install_spc` instructions, the Raspberry Pi will then proceed with a safe shutdown. 
+At this point, Pironman U1 will send a shutdown signal to the Raspberry Pi via I2C. If you have followed the :ref:`install_spc`, the Raspberry Pi will then proceed with a safe shutdown. 
 
-After shutdown, the configured Raspberry Pi shutdown signal pin, GPIO26, will go low. Once Pironman U1 detects this low signal, it cuts off the power to the Raspberry Pi.
+After shutdown, the configured Raspberry Pi shutdown signal pin, GPIO26, will go low. Once the main board detects this low signal, it cuts off the power to the Raspberry Pi.
 
 In the ``spc`` program, the shutdown signal pin is set by adding the following line to the Raspberry Pi's ``/boot/config.txt`` file.
 
@@ -129,9 +129,9 @@ Fan Pin, for connecting a 4010 fan.
 
 * You can use them without parameters to get the current data. For example, use the command below to get the current fan speed.
 
-    .. code-block:: shell
+  .. code-block:: shell
 
-      spc -f
+    spc -f
 
 
 RTC Function
@@ -143,7 +143,7 @@ The onboard microcontroller supports the RTC (Real-Time Clock) function. Install
 
 **For Raspberry Pi 4**
 
-When the Pironman U1 is powered off or shut down, the microcontroller is powered by the button cell battery, recording the time, with a standby current of about 2uA. The board does not support charging the RTC battery, so there is no need to use a rechargeable battery. A **CR1220** battery is recommended.
+When the Pironman U1 is powered off or shut down, the microcontroller is powered by the button cell battery, recording the time, with a standby current of about 2uA. The board does not support charging the RTC battery, so there is no need to use a rechargeable battery. The **CR1220 non-rechargeable** battery provided in the kit is recommended.
 
 If you have followed the :ref:`install_spc` instructions, the Raspberry Pi will automatically synchronize with the RTC time upon booting.
 
@@ -162,12 +162,14 @@ If you have followed the :ref:`install_spc` instructions, the Raspberry Pi will 
     :width: 600
     :align: center
 
+**Enable Trickle Charging**
+
 * The Raspberry Pi 5 supports charging the RTC battery. By default, the trickle charging feature for the battery is disabled. The ``sysfs`` files indicate the current trickle charging voltage and limits:
 
   .. warning::
 
-    * A rechargeable ML1220 battery can be used.
-    * When using a non-rechargeable battery, disable the trickle charging feature for the battery.
+    * A **rechargeable ML1220** battery can be used here.
+    * If you are using the **CR1220 non-rechargeable** battery provided in the kit, make sure not to enable the Trickle Charging feature.
 
   .. code-block:: shell
 

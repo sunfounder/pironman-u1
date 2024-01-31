@@ -1,7 +1,7 @@
 .. _home_ass:
 
-Home Assistant
-=======================
+Home Assistant(Pi 4)
+======================================
 
 
 This section will guide you in installing the Home Assistant operating system on your Raspberry Pi. 
@@ -14,4 +14,5 @@ It is important to backup your data before proceeding.
     install_hassos
     set_up_homeass
     ha_addon
+    ha_dashboard
     ha_mqtt

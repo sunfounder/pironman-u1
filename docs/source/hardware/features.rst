@@ -10,11 +10,11 @@ Features
 * I2C communication to read battery voltage, current, and other information
 * PCIe 3.0 x1 M.2 M key 2230, 2242, 2260, 2280 for NVMe SSD
 * IR Receiver for multimedia centers like Kodi or Volumio
-* 2 RGB Fans, with GPIO control
+* Comes with a fan controlled by Raspberry Pi via I2C to MCU
 * Retro metal power button with indicator light for safe shutdown
-* External GPIO extender with pin name label, for easy access
-* Re-wiring of the microSD card for easy access
-* Aluminum main body with a clear Acrylic side panel
+* Extend the 40-pin GPIO outward with pin name label, for easy access
+* Direct Access to Raspberry Pi's microSD Card Slot
+* Aluminum main body with a black Acrylic side panel
 
 
 **Parameters**
@@ -35,10 +35,10 @@ Features
     * 2 x USB 3.0
     * Gigabit LAN port
     * 2 x 4Kp60 HDMI Type A
-* 1 x RGB Fan: 40x40x10mm
+* 1 x Fan: 40x40x10mm
 * 38KHz IR Receiver
 * PCIe 3.0 x1 M.2 M key 2230, 2242, 2260, 2280 for NVMe SSD
-* 1220 Battery for RTC
+* A CR1220 non-rechargeable battery for RTC
 * RGB LED Metal Power Button
 
 

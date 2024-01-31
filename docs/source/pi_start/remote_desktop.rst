@@ -1,7 +1,7 @@
 .. _remote_desktop:
 
-Remote Desktop Access for Raspberry Pi
-==================================================
+Access the Raspberry Pi desktop through VNC Viewer
+=====================================================
 
 For those preferring a graphical user interface (GUI) over command-line access, the Raspberry Pi supports remote desktop functionality. This guide will walk you through setting up and using VNC (Virtual Network Computing) for remote access.
 

@@ -1,4 +1,4 @@
-RGB Fan
+Fan
 ============
 
 .. image:: img/size_fan.png

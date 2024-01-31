@@ -100,11 +100,11 @@ Now, let's set up the WiFi connection.
 
 Eject the microSD card from your computer and insert it into your Raspberry Pi. Connect the power supply (and Ethernet cable, if applicable).
 
-From your computer, go to ``homeassistant.local:8123`` or ``homeassistant.local:8123``.
+From your computer, go to ``homeassistant.local:8123``.
 
 Initial setup of Home Assistant may take some time during first use.
 
-.. image:: img/ha_home_page.png
+    .. image:: img/ha_home_page.png
 
 **5. Creating Your Account**
 
