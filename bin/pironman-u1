@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Pass all arguments to the pironman-u1 script
+/opt/pironman-u1/venv/bin/pironman-u1-service "$@"
+

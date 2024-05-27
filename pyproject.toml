@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pironman_u1"
+authors = [
+  { name="SunFounder", email="service@sunfounder.com" },
+]
+description = "Library for Pironman U1"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU License",
+  "Operating System :: OS Independent",
+]
+dynamic = ["version"]
+
+dependencies = [
+"spc = { git = 'https://github.com/sunfounder/spc.git', branch = 'main' }"
+]
+
+[project.scripts]
+pironman-u1-service = "pironman_u1:main"
+
+[tool.setuptools]
+packages = ["pironman_u1"]
+
+[project.urls]
+"Homepage" = "https://github.com/sunfounder/pironman-u1"
+"Bug Tracker" = "https://github.com/sunfounder/pironman-u1/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "pironman_u1.__version__"}
