@@ -18,7 +18,7 @@ classifiers = [
 dynamic = ["version"]
 
 dependencies = [
-"spc = { git = 'https://github.com/sunfounder/spc.git', branch = 'main' }"
+"spc@git+https://github.com/sunfounder/spc.git#egg=main"
 ]
 
 [project.scripts]

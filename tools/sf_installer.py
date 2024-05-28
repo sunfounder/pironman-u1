@@ -289,12 +289,14 @@ class SF_Installer():
         for package, url in self.python_source.items():
             self.install_python_source(package, url)
 
+    def setup_bin(self):
+        for bin in self.bin_files:
+            self.do('Copy binary file', f'cp bin/{bin} /usr/local/bin/')
+            self.do('Change binary file mode', f'chmod +x /usr/local/bin/{bin}')
+
     def setup_auto_start(self):
         if 'skip_auto_start' in self.args and not self.args.skip_auto_start:
             print("Setup auto start...")
-            for bin in self.bin_files:
-                self.do('Copy binary file', f'cp bin/{bin} /usr/local/bin/')
-                self.do('Change binary file mode', f'chmod +x /usr/local/bin/{bin}')
             for service in self.service_files:
                 self.do('Copy service file', f'cp bin/{service} /etc/systemd/system/')
                 self.do('Enable service', f'systemctl enable {service}')
@@ -366,6 +368,7 @@ class SF_Installer():
             self.create_working_dir()
             self.install_pip_dep()
             self.install_py_src_pkgs()
+            self.setup_bin()
             self.setup_auto_start()
             self.setup_config_txt()
             self.copy_dtoverlay()
