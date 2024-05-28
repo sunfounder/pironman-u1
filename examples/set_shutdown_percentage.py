@@ -1,5 +1,5 @@
 
-from pironman_u1 import PironmanU1
+from pironman_u1.pironman_u1 import PironmanU1
 import time
 
 u1 = PironmanU1()
