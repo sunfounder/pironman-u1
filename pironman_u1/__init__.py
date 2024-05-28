@@ -1,13 +1,9 @@
 from .version import __version__
-from spc.spc import SPC
-
-class PironmanU1(SPC):
-    def set_fan_mode(self, mode):
-        self.write_fan_mode(mode)
 
 def main():
     import argparse
     import time
+    from .pironman_u1 import PironmanU1
     u1 = PironmanU1()
     parser = argparse.ArgumentParser(description='Pironman U1')
     parser.add_argument('-sp', '--shutdown-percentage', nargs='?', default='', help='Set shutdown percentage, leave empty to read')
@@ -21,8 +17,8 @@ def main():
     parser.add_argument('-bp', '--battery-percentage', action='store_true', help='Read battery percentage')
     parser.add_argument('-bs', '--battery-capacity', action='store_true', help='Read battery capacity')
     parser.add_argument('-ps', '--power-source', action='store_true', help='Read power source')
-    parser.add_argument('-ii', '--is-input-plugged_in', action='store_true', help='Read is input plugged in')
-    parser.add_argument('-ic', '--is-charging', action='store_true', help='Read is charging')
+    parser.add_argument('-ip', '--is-input-plugged-in', action='store_true', help='Read is input plugged in')
+    parser.add_argument('-chg', '--is-charging', action='store_true', help='Read is charging')
     parser.add_argument('-do', '--default-on', action='store_true', help='Read default on')
     parser.add_argument('-bi', '--board-id', action='store_true', help='Read board id')
     parser.add_argument('-a', '--all', action='store_true', help='All')
@@ -42,8 +38,8 @@ def main():
                 time.sleep(0.5)
                 if u1.read_shutdown_percentage() == int(args.shutdown_percentage):
                     print(f"Success, shutdown battery percentage: {u1.read_shutdown_percentage()}%")
-    if args.fan_mode != '':
-        if args.fan_mode == None:
+    if args.fan_power != '':
+        if args.fan_power == None:
             print(f"Fan power: {u1.read_fan_power()}")
         else:
             u1.write_fan_power(int(args.fan_power))
@@ -66,7 +62,7 @@ def main():
         print(f"Battery percentage: {u1.read_battery_percentage()} %")
     if args.battery_capacity:
         print(f"Battery capacity: {u1.read_battery_capacity()} mAh")
-    if args.battery_source:
+    if args.power_source:
         power_source = u1.read_power_source()
         print(f"Power source: {power_source} ({'Battery' if power_source == u1.BATTERY else 'External'})")
     if args.is_input_plugged_in:
@@ -90,6 +86,7 @@ def main():
         print(f"Power source: {data_buffer['power_source']} - {'Battery' if data_buffer['power_source'] == u1.BATTERY else 'External'}")
         print(f"Input plugged in: {data_buffer['is_input_plugged_in']}")
         print(f"Charging: {data_buffer['is_charging']}")
+        print(f"Fan power: {data_buffer['fan_power']}")
         print('')
         print(f"Internal data:")
         print(f'Board id: {u1.read_board_id()}')
