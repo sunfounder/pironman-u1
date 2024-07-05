@@ -82,7 +82,6 @@ def main():
         print(f"Battery voltage: {data_buffer['battery_voltage']} mV")
         print(f"Battery current: {data_buffer['battery_current']} mA")
         print(f"Battery percentage: {data_buffer['battery_percentage']} %")
-        print(f"Battery capacity: {data_buffer['battery_capacity']} mAh")
         print(f"Power source: {data_buffer['power_source']} - {'Battery' if data_buffer['power_source'] == u1.BATTERY else 'External'}")
         print(f"Input plugged in: {data_buffer['is_input_plugged_in']}")
         print(f"Charging: {data_buffer['is_charging']}")
