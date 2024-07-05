@@ -68,9 +68,9 @@ def main():
     if args.is_input_plugged_in:
         print(f"Input plugged in: {u1.read_is_input_plugged_in()}")
     if args.is_charging:
-        print(f"Charging: {u1.read_is_charging()}")
+        print(f"Charging: {u1.read_is_charging() == 1}")
     if args.default_on:
-        print(f"Default on: {u1.read_default_on()}")
+        print(f"Default on: {u1.read_default_on() == 1}")
     if args.board_id:
         print(f"Board id: {u1.read_board_id()}")
     if args.all:
@@ -90,5 +90,5 @@ def main():
         print('')
         print(f"Internal data:")
         print(f'Board id: {u1.read_board_id()}')
-        print(f"Default on: {u1.read_default_on()}")
+        print(f"Default on: {u1.read_default_on() == 1}")
         print(f"Shutdown percentage: {u1.read_shutdown_percentage()} %")
