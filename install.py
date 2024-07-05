@@ -50,6 +50,6 @@ installer = SF_Installer(
     bin_files = ['pironman-u1'],
 
     # - Copy device tree overlay to /boot/overlays
-    dtoverlay = ['sunfounder-pironman-u1.dtbo'],
+    dtoverlay = ['sunfounder-pironmanupsedition.dtbo'],
 )
 installer.install()
